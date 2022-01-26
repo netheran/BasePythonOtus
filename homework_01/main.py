@@ -32,6 +32,8 @@ def filter_numbers(num_list, ftype):
     [1, 3]
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     [2, 4]
+    >>> filter_numbers([1, 2, 3, 6, 7, 9, 10, 23], PRIME)
+    [2, 3, 7, 23]
     """
     result = []
     if ftype == ODD:
@@ -41,9 +43,8 @@ def filter_numbers(num_list, ftype):
         result = list(filter(lambda x: x % 2 == 0, num_list))
 
     elif ftype == PRIME:
-        result = list(filter(lambda y: (lambda x: all(x % i != 0 for i in range(2, int(x ** 0.5)+1)), num_list)))
+        result = list(filter(lambda x: x > 1 and all(x % i != 0 for i in range(2, int(x ** 0.5) + 1)), num_list))
 
     return result
-
 
 
