@@ -17,6 +17,3 @@ class NotEnoughFuel(Exception):
 class CargoOverload(Exception):
     pass
 
-
-class EngineNotStarted(Exception):
-    pass
