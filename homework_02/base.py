@@ -1,5 +1,5 @@
 from abc import ABC
-from homework_02.exceptions import EngineNotStarted, NotEnoughFuel, LowFuelError
+from homework_02.exceptions import NotEnoughFuel, LowFuelError
 
 
 class Vehicle(ABC):
