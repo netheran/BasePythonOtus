@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "course_homeworks"
+version = "0.1.0"
+description = "homework-03"
+authors = ["Anton Ilyin"]
+license = "general GNU license"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.73.0"
+uvicorn = "^0.17.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
