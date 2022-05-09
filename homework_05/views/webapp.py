@@ -4,15 +4,15 @@ from flask import (
 )
 
 
-web_app = Blueprint("webapp", __name__)
+webapp = Blueprint("webapp", __name__)
 
 
-@web_app.get("/", endpoint="index")
+@webapp.get("/", endpoint="index")
 def index_view():
-    return render_template("templates/app/index.html")
+    return render_template("app/index.html")
 
 
-@web_app.get("/about/", endpoint="about")
+@webapp.get("/about/", endpoint="about")
 def show_about():
-    return render_template("templates/app/about.html")
+    return render_template("app/about.html")
 

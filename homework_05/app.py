@@ -12,11 +12,11 @@
 """
 from flask import Flask
 
-from views.webapp import web_app
+from homework_05.views.webapp import webapp
 
 
 app = Flask(__name__)
 
-app.register_blueprint(web_app, url_prefix="/")
+app.register_blueprint(webapp, url_prefix="/")
 
 
